@@ -1,0 +1,19 @@
+{
+  "name": "parenthesis.io",
+  "homepage": "http://parenthesis.io",
+  "authors": [
+    "team@parenthesis.io"
+  ],
+  "description": "Official Website for Parenthesis Tech LLC",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor/",
+    "test",
+    "tests"
+  ]
+}
