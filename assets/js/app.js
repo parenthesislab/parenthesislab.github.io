@@ -16,7 +16,7 @@ var FooterMenu = React.createClass({
       case 'tech-stack':
       content = <p>PHP - HTML5 - CSS3 - JavaScript - jQuery - AngularJS - Symfony - ReactJS -
                 Laravel - Linux - NodeJS - Drupal - WordPress - MySQL - APIs - Ionic - PhoneGap -
-                MongoDB - Amazon AWS - Java</p>;
+                MongoDB - DynamoDB - Amazon AWS - Java - Python</p>;
       break;
       default:
       throw new Error('Unimplemented type');
