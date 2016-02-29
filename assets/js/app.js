@@ -97,6 +97,9 @@ var App = React.createClass({
 
   setActiveContent: function (content) {
     this.setState({activeContent: content});
+    setTimeout(function(){
+      this.replaceState(this.getInitialState());
+    }.bind(this),60000);
   },
 
   render: function () {
