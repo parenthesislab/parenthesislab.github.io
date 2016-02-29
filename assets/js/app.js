@@ -38,16 +38,16 @@ var FooterMenu = React.createClass({
             <div className="col-md-6">
               <ul className="text-muted list-inline social-links">
                 <li>
-                <a href="mailto:hi@parenthesis.io"><span className="typcn typcn-social-at-circular"></span></a>
+                  <a href="mailto:hi@parenthesis.io"><span className="typcn typcn-social-at-circular"></span></a>
                 </li>
                 <li>
-                <a href="https://www.linkedin.com/company/parenthesis-tech"><span className="typcn typcn-social-linkedin-circular"></span></a>
+                  <a href="https://www.linkedin.com/company/parenthesis-tech"><span className="typcn typcn-social-linkedin-circular"></span></a>
                 </li>
                 <li>
-                <a href="https://twitter.com/ParenthesisTech"><span className="typcn typcn-social-twitter-circular"></span></a>
+                  <a href="https://twitter.com/ParenthesisTech"><span className="typcn typcn-social-twitter-circular"></span></a>
                 </li>
                 <li>
-                <a href="https://github.com/parenthesislab"><span className="typcn typcn-social-github-circular"></span></a>
+                  <a href="https://github.com/parenthesislab"><span className="typcn typcn-social-github-circular"></span></a>
                 </li>
               </ul>
             </div>

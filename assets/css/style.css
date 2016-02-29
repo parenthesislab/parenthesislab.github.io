@@ -108,6 +108,10 @@ footer .container ul.main-menu li {
 		text-indent: 20px;
 	}
 
+	.container p {
+		margin: 0 20px;
+	}
+
 	footer .container ul.social-links {
 		float: none;
 	}
@@ -115,6 +119,11 @@ footer .container ul.main-menu li {
 	footer .container ul.main-menu {
 		margin-bottom: 10px;
 	}
+
+	footer .container .col-md-6 {
+		position: initial;
+	}
+
 }
 
 @media all and (max-width: 400px) { /* screen size until 500px */
