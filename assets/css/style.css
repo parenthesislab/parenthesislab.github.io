@@ -7,6 +7,11 @@ body {
 	font-family: Baskerville,Baskerville Old Face,Libre Baskerville,Hoefler Text,Garamond,Times New Roman,serif;
 }
 
+#content,
+#content > div {
+	display: initial;
+}
+
 .container h1 {
 	font-size: 60px;
 	color: #FFFFFF;
@@ -20,6 +25,12 @@ body {
 	display:table;
 	width: 100%;
 	padding: 0;
+}
+
+.container p {
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 1px;
 }
 
 .row {
@@ -50,12 +61,29 @@ footer .container {
 
 footer .container .text-muted {
 	margin-bottom: 0;
+	font-size: 35px;
 }
 
 footer .container .text-muted a {
 	color: inherit;
 }
 
+footer .container ul.social-links {
+	float: right;
+	margin-top: 10px;
+}
+
+footer .container ul.main-menu {
+	float: left;
+	font-size: 1.5em;
+	letter-spacing: 10px;
+}
+
+footer .container ul.main-menu li {
+	cursor: pointer;
+}
+
+/* Media Queries */
 @media all and (max-width: 1000px) { /* screen size until 1000px */
 	.container h1 {
 		font-size: 46px;
@@ -73,11 +101,29 @@ footer .container .text-muted a {
 }
 
 @media all and (max-width: 500px) { /* screen size until 500px */
+
 	.container h1 {
 		font-size: 26px;
 		letter-spacing: 20px;
 		text-indent: 20px;
 	}
+
+	.container p {
+		margin: 0 20px;
+	}
+
+	footer .container ul.social-links {
+		float: none;
+	}
+
+	footer .container ul.main-menu {
+		margin-bottom: 10px;
+	}
+
+	footer .container .col-md-6 {
+		position: initial;
+	}
+
 }
 
 @media all and (max-width: 400px) { /* screen size until 500px */
