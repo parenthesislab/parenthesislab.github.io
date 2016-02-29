@@ -7,6 +7,11 @@ body {
 	font-family: Baskerville,Baskerville Old Face,Libre Baskerville,Hoefler Text,Garamond,Times New Roman,serif;
 }
 
+#content,
+#content > div {
+	display: initial;
+}
+
 .container h1 {
 	font-size: 60px;
 	color: #FFFFFF;
@@ -20,6 +25,12 @@ body {
 	display:table;
 	width: 100%;
 	padding: 0;
+}
+
+.container p {
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 1px;
 }
 
 .row {
