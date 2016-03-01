@@ -70,7 +70,7 @@ footer .container .text-muted a {
 
 footer .container ul.social-links {
 	float: right;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 footer .container ul.main-menu {
@@ -140,4 +140,28 @@ footer .container ul.main-menu li {
 		letter-spacing: 15px;
 		text-indent: 15px;
 	}
+}
+
+ul.social-links li span.icon {
+	display: block;
+	text-indent: -9999px;
+	width: 35px;
+	height: 35px;
+	background-size: 35px 35px;
+}
+
+.icon-email {
+	background: url(/img/send-mail-circle.svg);
+}
+
+.icon-linkedin {
+	background: url(/img/linkedin-circle.svg);
+}
+
+.icon-twitter {
+	background: url(/img/twitter-circle.svg);
+}
+
+.icon-github {
+	background: url(/img/github-circle.svg);
 }
