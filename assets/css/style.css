@@ -165,3 +165,14 @@ ul.social-links li span.icon {
 .icon-github {
 	background: url(/img/github-circle.svg);
 }
+
+
+/* Animations */
+.fadein-appear {
+  opacity: 0.01;
+  transition: opacity 1s ease-in;
+}
+
+.fadein-appear.fadein-appear-active {
+  opacity: 1;
+}

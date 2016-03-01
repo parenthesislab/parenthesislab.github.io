@@ -1,3 +1,5 @@
+var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
+
 var FooterMenu = React.createClass({
   onClick: function (type) {
     var content;
@@ -73,7 +75,11 @@ var MainContent = React.createClass({
 
 var MainContentWrapper = React.createClass({
   render: function () {
-    return <MainContent />;
+    return (
+      <ReactCSSTransitionGroup transitionName="fadein" transitionAppear={true} >
+        <MainContent />
+      </ReactCSSTransitionGroup>
+    );
   }
 });
 
