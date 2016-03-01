@@ -7,10 +7,10 @@ var FooterMenu = React.createClass({
       content = <p>Parenthesis Tech is a leading software development company providing technology
                 solutions for organizations and individuals across the globe. We provide a
                 broad scope of services in areas of Web Development, Hybrid Mobile Apps, Desktop
-                Software and Server/Cloud-Based Applications & Management. The Parenthesis team
-                prides itself on having unparalleled expert programmers ready to apply their
-                knowledge and skill to bring you success. Quality, communication and transparency
-                are our goals to always deliver the best results.<br />
+                Software and Server/Cloud-Based Applications & Management, using modern
+                straightforward technologies. The Parenthesis team prides itself on having unparalleled
+                expert programmers ready to apply their knowledge and skill to bring you success.
+                Quality, communication and transparency are our goals to always deliver the best results.<br />
                 We don't want it perfect, we want it awesome.</p>;
       break;
       case 'tech-stack':
