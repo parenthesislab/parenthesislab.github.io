@@ -1,6 +1,7 @@
 var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
 var FooterMenu = React.createClass({
+
   onClick: function (type) {
     var content;
 
@@ -25,6 +26,7 @@ var FooterMenu = React.createClass({
 
     this.props.setActiveContent(content);
   },
+
   render: function () {
     return (
       <footer className="footer">
@@ -57,12 +59,15 @@ var FooterMenu = React.createClass({
       </footer>
       );
   }
+
 });
 
 var MainContent = React.createClass({
+
   contextTypes: {
     activeContent: React.PropTypes.any
   },
+
   render: function () {
     return (
       <div className="container">
@@ -70,9 +75,11 @@ var MainContent = React.createClass({
       </div>
       );
   }
+
 });
 
 var MainContentWrapper = React.createClass({
+
   render: function () {
     return (
       <ReactCSSTransitionGroup transitionName="fadein" transitionAppear={true} >
@@ -80,6 +87,7 @@ var MainContentWrapper = React.createClass({
       </ReactCSSTransitionGroup>
     );
   }
+
 });
 
 var App = React.createClass({
