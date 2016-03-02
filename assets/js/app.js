@@ -1,6 +1,7 @@
 var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
 var FooterMenu = React.createClass({
+
   onClick: function (type) {
     var content;
 
@@ -25,6 +26,7 @@ var FooterMenu = React.createClass({
 
     this.props.setActiveContent(content);
   },
+
   render: function () {
     return (
       <footer className="footer">
@@ -57,29 +59,47 @@ var FooterMenu = React.createClass({
       </footer>
       );
   }
+
 });
 
 var MainContent = React.createClass({
-  contextTypes: {
-    activeContent: React.PropTypes.any
+
+  getInitialState: function () {
+    return { opacity: 1 }
   },
+
+  componentWillReceiveProps: function (nextProps) {
+    if (this.props.content !== nextProps.content) {
+      this.setState({ opacity: 0 })
+    }
+  },
+
+  componentDidUpdate: function () {
+    if (this.state.opacity !== 1) {
+      setTimeout(() => {
+        this.setState({ opacity: 1 })
+      }, 200)
+    }
+  },
+
   render: function () {
+
+    var style = {
+      opacity: this.state.opacity,
+      transition: this.state.opacity > 0 ? 'opacity 0.2s ease-in' : 'none'
+    }
+
     return (
       <div className="container">
-        <div className="row">{this.context.activeContent}</div>
+        <div className="row" style={style}>
+          <ReactCSSTransitionGroup transitionName="fadein" transitionAppear={true} >
+            {this.props.content}
+          </ReactCSSTransitionGroup>
+        </div>
       </div>
       );
   }
-});
 
-var MainContentWrapper = React.createClass({
-  render: function () {
-    return (
-      <ReactCSSTransitionGroup transitionName="fadein" transitionAppear={true} >
-        <MainContent />
-      </ReactCSSTransitionGroup>
-    );
-  }
 });
 
 var App = React.createClass({
@@ -110,7 +130,7 @@ var App = React.createClass({
   render: function () {
     return (
       <div>
-        <MainContentWrapper />
+        <MainContent content={this.state.activeContent} />
         <FooterMenu setActiveContent={this.setActiveContent} />
       </div>
       );
